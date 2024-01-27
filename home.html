@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="popup.js"></script>
+  <title>Home</title>
+  
+</head>
+<body>
+<div class="body1">
+    <header>
+        <div class="search-bar">
+          <input type="text" placeholder="...ابحث">
+        </div>
+      </header>
+    
+      <nav>
+        <div class="profile">
+            <div class="pro-cir"></div>
+            <p>بكر احمد</p>
+        </div>
+        <ul>
+          <li><a href="#">الصفحة الرئيسية</a></li>
+          <li><a href="#">الملف الشخصي</a></li>
+          <li><a href="#">المهام الادارية</a></li>
+          <li><a href="#">حول</a></li>
+          <li><a href="#">المزيد</a></li>
+          <li><a href="#">الاعدادات</a></li>
+        </ul>
+      </nav>
+    
+        <div class="todo">
+            <div class="column">
+                المهام المطلوبة
+                <div data-modal-target="#modal" class="inner-div">
+                <h1>تصميم بوست</h1>
+                <p>2024/1/1</p>
+                <h3></h3>
+                <div class="open" onclick="goToAnotherPage()">التفاصيل</div>
+                </div>
+                <div data-modal-target="#modal" class="inner-div">
+                    <h1>تصميم فيديو</h1>
+                <p>2024/1/1</p>
+                <h3></h3>
+                <div class="open" onclick="goToAnotherPage()">التفاصيل</div>
+                </div>
+                
+              </div>
+              <div class="column">
+                المهام الحالية
+                <div data-modal-target="#modal" class="inner-div">
+                    <h1>تصميم 4 صور</h1>
+                <p>2024/1/1</p>
+                <h3></h3>
+                <div class="open" onclick="goToAnotherPage()">التفاصيل</div>
+                </div>
+                <div data-modal-target="#modal" class="inner-div">
+                    <h1>لقاء مع زبون</h1>
+                <p>2024/1/1</p>
+                <h3></h3>
+                <div class="open" onclick="goToAnotherPage()">التفاصيل</div>
+                </div>
+                <div data-modal-target="#modal" class="inner-div">
+                    <h1>تحديث تصميم</h1>
+                <p>2024/1/1</p>
+                <h3></h3>
+                <div class="open" onclick="goToAnotherPage()">التفاصيل</div>
+                </div>
+              </div>
+              <div data-modal-target="#modal" class="column">
+                المهام المنجزة
+                <div class="inner-div">
+                    <h1>فحص تصميم </h1>
+                <p>2024/1/1</p>
+                <h3></h3>
+                <div class="open" onclick="goToAnotherPage()">التفاصيل</div>
+                </div>
+              </div>
+        </div>
+        <div class="modal" id="modal">
+            <div class="modal-header">
+              <!-- <div class="title"><p>EVENT DESCRIPTON</p></div> -->
+              <div class="close">
+                <button data-close-button class="close-button">&times;</button>
+              </div>
+            </div>
+            <div class="modal-body">
+                السلام عليكم شلونكم اخباركم لاب لاب لاب
+            </div>
+            <!-- <button onclick="scrollToSection()" class="modal-btn" data-close-button class="close-button" >REGISTER</button> -->
+          </div>
+          <div id="overlay"></div>
+       </div>
+</div>
+<script>
+    function goToAnotherPage() {
+      window.location.href = 'details.html'; 
+    }
+  </script>
+</body>
+</html>

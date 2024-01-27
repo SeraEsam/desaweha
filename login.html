@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>log in</title>
+</head>
+<body>
+    <div class="circle2"><p>منصة مقدمة لادارة مهامك</p>
+    <img src="photos/logo.png" alt="logo">
+    <div class="circle3">
+        <div class="circle4"></div>
+    </div>
+    </div>
+    <div class="circle1"></div>
+
+        <div class="container">
+            <form action="#">
+                <div class="h22"><h2 class="h33">سجل في </h2>
+                <img src="photos/logo.png" alt=""></div>
+    
+            <div class="labels">
+                <label for="p-number">
+                    <span>رقم الهاتف</span>
+                    <input type="number" id="p-number" name="p-number" required>
+                  </label>
+    
+                  <label for="password">
+                    <span>كلمة المرور</span>
+                    <input type="text" id="password" name="password" required>
+                  </label>
+            </div>
+    
+                <button onclick="goToAnotherPage()" class="but">تسجيل الدخول</button>
+            </form>
+        </div>
+        <div class="sign-up">
+            <button onclick="goToSign()"><p>انشاء حساب</p></button>
+        </div>
+
+        <script>
+            function goToAnotherPage() {
+              window.location.href = 'home.html'; 
+            }
+          </script>
+</body>
+</html>
